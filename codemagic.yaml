@@ -6,4 +6,4 @@ workflows:
       script: |
         xcode-project run-tests \
             --workspace NeoDemoWorkspace.xcworkspace \
-            --scheme NeoDemoCICD
+            --scheme NeoDemoCICDTests
