@@ -1,5 +1,9 @@
 workflows:
-  hello-world:
-    name: Hello world workflow
+  Neostore-Demo-workflow:
+    name: First Workflow
     scripts:
-        - echo "Hello World!"
+    - name: iOS test
+      script: |
+        xcode-project run-tests \
+            --workspace NeoDemoWorkspace.xcworkspace \
+            --scheme "NeoDemoCICD"
